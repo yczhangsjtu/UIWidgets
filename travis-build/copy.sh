@@ -10,7 +10,8 @@ echo "Creating empty project..."
 mkdir -p $PROJECT_PATH
 mkdir -p $UNITY_BUILD_DIR
 /Applications/Unity/Unity.app/Contents/MacOS/Unity \
-  -force-free \
+  -username $UNITY_USERNAME \
+  -password $UNITY_PASSWORD \
   -batchmode \
   -nographics \
   -silent-crashes \

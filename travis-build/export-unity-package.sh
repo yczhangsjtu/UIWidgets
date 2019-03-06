@@ -11,7 +11,8 @@ ERROR_CODE=0
 
 echo "Creating package at=$EXPORT_PATH"
 /Applications/Unity/Unity.app/Contents/MacOS/Unity \
-  -force-free \
+  -username $UNITY_USERNAME \
+  -password $UNITY_PASSWORD \
   -batchmode \
   -nographics \
   -silent-crashes \

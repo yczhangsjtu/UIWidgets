@@ -8,7 +8,8 @@ ERROR_CODE=0
 
 echo "Running Editor Tests..."
 /Applications/Unity/Unity.app/Contents/MacOS/Unity \
-  -force-free \
+  -username $UNITY_USERNAME \
+  -password $UNITY_PASSWORD \
   -batchmode \
   -nographics \
   -silent-crashes \
