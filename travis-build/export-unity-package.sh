@@ -22,7 +22,7 @@ echo "Creating package at=$EXPORT_PATH"
   -quit \
   | tee "$LOG_FILE"
   
-if [ $? = 0 ] ; then
+if [ "$?" == "0" ] ; then
 	echo "Created package successfully."
 	ERROR_CODE=0
 	

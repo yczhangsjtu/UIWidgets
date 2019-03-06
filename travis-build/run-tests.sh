@@ -18,7 +18,7 @@ echo "Running Editor Tests..."
   -runEditorTests \
   | tee "$LOG_FILE"
 
-if [ $? = 0 ] ; then
+if [ "$?" == "0" ] ; then
   echo "Tests completed successfully."
   ERROR_CODE=0
 else

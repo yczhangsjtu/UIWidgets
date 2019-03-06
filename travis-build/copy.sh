@@ -20,7 +20,7 @@ mkdir -p $UNITY_BUILD_DIR
   -quit \
   | tee "$LOG_FILE"
   
-if [ $? = 0 ] ; then
+if [ "$?" == "0" ] ; then
   echo "Creating empty project completed successfully."
   ERROR_CODE=0
 else
@@ -34,7 +34,7 @@ mkdir -p $PROJECT_PATH/Assets/$PACKAGE_NAME
 cp -r $(pwd)/Editor $(pwd)/Runtime $(pwd)/Tests $(pwd)/scripts $PROJECT_PATH/Assets/$PACKAGE_NAME
 
 echo "Copy package folder to empty project"
-if [ $? = 0 ] ; then
+if [ "$?" == "0" ] ; then
   echo "Copy completed successfully."
   ERROR_CODE=0
 else
