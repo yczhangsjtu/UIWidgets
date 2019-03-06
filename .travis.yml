@@ -1,4 +1,5 @@
-language: c#
+language: objective-c
+os: osx
 osx_image: xcode10.1
 rvm:
 - 2.2         #see before_install for getting RVM stable.
