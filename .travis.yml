@@ -1,5 +1,5 @@
 language: c#
-osx_image: xcode9.2
+osx_image: xcode10.1
 rvm:
 - 2.2         #see before_install for getting RVM stable.
 
