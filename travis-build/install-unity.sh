@@ -42,7 +42,7 @@ echo "Activating license"
 mkdir -p ~/Library/Unity/Certificates
 cp $(pwd)/CACerts.pem ~/Library/Unity/Certificates/
 /Applications/Unity/Unity.app/Contents/MacOS/Unity \
-  -batchmode
+  -batchmode \
   -username "$UNITY_USERNAME" \
   -password "$UNITY_PASSWORD" \
   -logFile \
