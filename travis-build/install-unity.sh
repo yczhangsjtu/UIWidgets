@@ -41,6 +41,7 @@ install $UNITY_OSX_PACKAGE_URL
 echo "Activating license"
 mkdir -p ~/Library/Unity/Certificates
 cp $(pwd)/CACerts.pem ~/Library/Unity/Certificates/
+cp $(pwd)/Unity_lic.ulf "/Library/Application Support/Unity/"
 /Applications/Unity/Unity.app/Contents/MacOS/Unity \
   -batchmode \
   -username "$UNITY_USERNAME" \
