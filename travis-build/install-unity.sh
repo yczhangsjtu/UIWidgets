@@ -37,3 +37,13 @@ ls $UNITY_DOWNLOAD_CACHE
 
 echo "Installing Unity..."
 install $UNITY_OSX_PACKAGE_URL
+
+echo "Activating license"
+/Applications/Unity/Unity.app/Contents/MacOS/Unity \
+  -username $UNITY_USERNAME \
+  -password $UNITY_PASSWORD \
+  -batchmode \
+  -logFile \
+  -noUpm \
+  -quit
+

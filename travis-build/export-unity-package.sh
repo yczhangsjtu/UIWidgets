@@ -51,6 +51,13 @@ else
 	ERROR_CODE=1
 fi
 
+echo "Returning license"
+/Applications/Unity/Unity.app/Contents/MacOS/Unity \
+  -batchmode \
+  -logFile \
+  -returnlicense \
+  -quit
+
 #echo 'Build logs:'
 #cat $LOG_FILE
 

@@ -10,8 +10,6 @@ echo "Creating empty project..."
 mkdir -p $PROJECT_PATH
 mkdir -p $UNITY_BUILD_DIR
 /Applications/Unity/Unity.app/Contents/MacOS/Unity \
-  -username $UNITY_USERNAME \
-  -password $UNITY_PASSWORD \
   -batchmode \
   -nographics \
   -silent-crashes \
@@ -19,7 +17,7 @@ mkdir -p $UNITY_BUILD_DIR
   -createProject "$PROJECT_PATH" \
   -quit \
   | tee "$LOG_FILE"
-  
+
 if [ "$?" == "0" ] ; then
   echo "Creating empty project completed successfully."
   ERROR_CODE=0
