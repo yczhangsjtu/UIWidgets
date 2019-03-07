@@ -42,7 +42,6 @@ echo "Activating license"
 /Applications/Unity/Unity.app/Contents/MacOS/Unity \
   -username "$UNITY_USERNAME" \
   -password "$UNITY_PASSWORD" \
-  -batchmode \
   -logFile \
   -noUpm \
   -quit
