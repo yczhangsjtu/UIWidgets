@@ -13,10 +13,9 @@ mkdir -p $UNITY_BUILD_DIR
   -batchmode \
   -nographics \
   -silent-crashes \
-  -logFile \
+  -logFile "$LOG_FILE" \
   -createProject "$PROJECT_PATH" \
-  -quit \
-  | tee "$LOG_FILE"
+  -quit
 
 if [ "$?" == "0" ] ; then
   echo "Creating empty project completed successfully."

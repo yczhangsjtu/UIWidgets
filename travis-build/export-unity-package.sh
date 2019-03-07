@@ -14,11 +14,10 @@ echo "Creating package at=$EXPORT_PATH"
   -batchmode \
   -nographics \
   -silent-crashes \
-  -logFile \
+  -logFile "$LOG_FILE" \
   -projectPath "$PROJECT_PATH" \
   -exportPackage "Assets" "$EXPORT_PATH" \
-  -quit \
-  | tee "$LOG_FILE"
+  -quit
   
 if [ "$?" == "0" ] ; then
 	echo "Created package successfully."

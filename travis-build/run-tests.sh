@@ -11,10 +11,9 @@ echo "Running Editor Tests..."
   -batchmode \
   -nographics \
   -silent-crashes \
-  -logFile \
+  -logFile "$LOG_FILE" \
   -projectPath "$PROJECT_PATH"\
-  -runEditorTests \
-  | tee "$LOG_FILE"
+  -runEditorTests
 
 if [ "$?" == "0" ] ; then
   echo "Tests completed successfully."
